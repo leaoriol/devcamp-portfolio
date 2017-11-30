@@ -1,4 +1,5 @@
 class PortfoliosController < ApplicationController
+  layout "portfolio"
 
   def index
     # list out all the items
