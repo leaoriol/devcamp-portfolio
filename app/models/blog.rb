@@ -6,4 +6,9 @@ class Blog < ApplicationRecord
   friendly_id :title, use: :slugged
 
   validates_presence_of :title, :body
+  
+  # testing for scopes
+  def self.special_blogs
+    limit(2)
+  end  
 end
