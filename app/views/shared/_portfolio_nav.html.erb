@@ -1,0 +1,31 @@
+<div class="collapse bg-inverse" id="navbarHeader">
+  <div class="container">
+    <div class="row">
+      <div class="col-sm-8 py-4">
+        <h4 class="text-white">About</h4>
+        <p class="text-muted">Test portfolio app for Udemy class on ruby on rails - this app is not meant to be functional and no time has been spent on design</p>
+      </div>
+      <div class="col-sm-4 py-4">
+        <h4 class="text-white">Explore</h4>
+        <ul class="list-unstyled">
+          <li><%= link_to "Home", root_path, class: 'text-white' %></li>
+          <li><%= link_to "Contact", contact_path, class: 'text-white' %></li>
+          <li><%= link_to "About me", about_path, class: 'text-white' %></li>
+          <li><%= link_to "Blogs", blogs_path, class: 'text-white' %></li>
+          <li><%= link_to "Portfolios", portfolios_path, class: 'text-white' %></li>
+          <li><%= login_helper 'text-white' %></li>
+        </ul>
+      </div>
+    </div>
+  </div>
+</div>
+
+<div class="navbar navbar-toggleable-* navbar-inverse bg-inverse">
+  <div class="container d-flex justify-content-between">
+    <a href="#" class="navbar-brand">Lea Oriol</a>
+    <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarHeader" aria-controls="navbarHeader" aria-expanded="false" aria-label="Toggle navigation">
+      <span class="navbar-toggler-icon">TOGGLE</span>
+    </button>
+  </div>
+</div>
+
