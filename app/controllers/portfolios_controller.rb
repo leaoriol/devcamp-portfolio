@@ -5,7 +5,7 @@ class PortfoliosController < ApplicationController
 
   def index
     # list out all the items
-    @portfolio_items = Portfolio.all
+    @portfolio_items = Portfolio.by_position
   end
 
   def react
