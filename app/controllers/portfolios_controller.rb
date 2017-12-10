@@ -5,7 +5,17 @@ class PortfoliosController < ApplicationController
 
   def index
     # list out all the items
-    @portfolio_items = Portfolio.all
+    @portfolio_items = Portfolio.by_position
+  end
+
+  def sort
+    puts params[:order]
+    puts '*' * 50
+    params[:order].each do |key, value|
+      Portfolio.find(value[:id]).update(position: value[:position])
+    end
+
+    render nothing: true
   end
 
   def react
