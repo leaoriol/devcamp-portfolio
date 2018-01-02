@@ -9,9 +9,8 @@
 
   <%= render 'comments/comment_form' %>
 
-  <!-- start of comment -->
-  <%= render @blog.comments %> 
-
-  <!-- end of comment -->
+  <div id='comments' data-blog-id="<%= @blog.id %>">
+    <%= render @blog.comments %> 
+  </div>
 
 </div>
